@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/*********************/
+/* Open Source Fonts */
+/*********************/
+
+/* Follows W3C's recommendation of using the web open font format (.woff) */
+
+/* In order of thickness */
+@font-face {
+	font-family: lato-heavy;
+	src: url(fonts/lato/lato-heavy.woff);
+}
+@font-face {
+	font-family: lato-regular;
+	src: url(fonts/lato/lato-regular.woff);
+}
+@font-face {
+	font-family: lato-light;
+	src: url(fonts/lato/lato-light.woff);
+}
+@font-face {
+	font-family: lato-hairline;
+	src: url(fonts/lato/lato-hairline.woff);
+}
+
+
+body {
+	display: block;
+  overflow: hidden;
+	background-color: #80F;
+	font-family: lato-regular, Helvetica, sans;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+canvas {
+  display: block;
+  cursor: crosshair;
+  border: 0;
+  margin: 0 auto;
+  padding: 0;
+}
