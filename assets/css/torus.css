@@ -28,7 +28,7 @@
 body {
 	display: block;
   overflow: hidden;
-	background-color: #80F;
+	/*background-color: #80F;*/
 	font-family: lato-regular, Helvetica, sans;
   border: 0;
   padding: 0;
@@ -38,6 +38,6 @@ canvas {
   display: block;
   cursor: crosshair;
   border: 0;
-  margin: 0 auto;
+  margin: auto auto;
   padding: 0;
 }

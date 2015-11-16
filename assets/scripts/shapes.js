@@ -218,8 +218,8 @@ class Color {
       }
     }
   }
-  style(light) {
-    if(light) return "rgb(" + this.red + ", " + this.green + ", " + this.blue + ")";
+  style(invert) {
+    if(invert) return "rgb(" + this.red + ", " + this.green + ", " + this.blue + ")";
     else return"rgb(" + Math.round((255-this.red)/2 + this.red) + ", " + Math.round((255-this.green)/2 + this.green) + ", " + Math.round((255-this.blue)/2 + this.blue) + ")";
   }
 }

@@ -1,6 +1,7 @@
 // Create the canvas.
 var canvas = window.document.getElementById("canvas");
 
+// Back when it was 16:9, now it is a circle!
 //if(Math.min(window.innerWidth, window.innerHeight * 9 / 16) == window.innerWidth) {
 //  canvas.setAttribute("width", window.innerWidth);
 //  canvas.setAttribute("height", window.innerWidth  * 9 / 16);
@@ -68,3 +69,12 @@ var main = function () {
 // Start the Game
 then = Date.now();
 main();
+
+// Go Fullscreen
+function fullscreen() {
+  var body = window.document.getElementsByTagName("body")[0];
+  if (body.requestFullscreen) body.requestFullscreen();
+  else if (body.msRequestFullscreen) body.msRequestFullscreen();
+  else if (body.mozRequestFullScreen) body.mozRequestFullScreen();
+  else if (body.webkitRequestFullscreen) body.webkitRequestFullscreen();
+}
